@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" media="all" href="v2.css">
+</head>
+
+<div class="container">
+    <table class="border" border="1">
+      <script>
+        document.write('<tr>');
+        document.write('<th></th>');
+
+        for(var i=1; i <= 12; i++){
+          document.write('<th>'+ i +' x</th>');
+        }
+
+        document.write('</tr>');
+        document.write('<tr>');
+        for(var j=1; j <= 12; j++){
+          document.write('<th>' + j + 'y</th>');
+
+          for(var k=1; k <=12; k++){
+            document.write('<td>'+ j*k +'</td>');
+          }
+
+          document.write('</tr>');
+        }
+      </script>
+    </table>
+</div>
+</html>
